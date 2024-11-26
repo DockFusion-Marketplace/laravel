@@ -1,0 +1,72 @@
+#User defined
+user:
+  back_end:
+    label:
+      Backend
+    hint:
+      Select a backend from the list above
+    type:
+      select
+    values:
+      - apache
+      - nginx
+    target:
+      BACK_END
+  php_version:
+    label:
+      PHP version
+    hint:
+      Select a PHP version from the list above
+    type:
+      select
+    values:
+      - 7.4
+      - "8.0"
+      - 8.1
+      - "8.2"
+      - "8.3"
+    target:
+      PHP_VERSION
+  
+  backend_ws:
+      disabled_post_install: true
+      label:
+        Laravel version
+      hint:
+        Select a laravel version
+      type:
+        select
+      values:
+        - 7
+        - 8
+        - 9
+        - "10"
+        - "11"
+      target:
+        LARAVEL_VERSION
+
+  php_error_reporting:
+    label:
+      Enable PHP error reporting?
+    type:
+      checkbox
+    hint: Check the box to display PHP errors 
+    target:
+      DISPLAY_PHPERROR
+  php_xdebug:
+    label:
+      Enable PHP extension XDEBUG?
+    type:
+      checkbox
+    hint: Check the box to display extension xdebug
+    target:
+      XDEBUG
+
+#System defaults
+system:
+  show_localpath_selector:
+    true
+  #Generate public ports for the docker image
+  ports:
+    http:
+      LARAVEL_HOST_HTTP_PORT
