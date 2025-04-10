@@ -1,17 +1,5 @@
 #User defined
 user:
-  back_end:
-    label:
-      Backend
-    hint:
-      Select a backend from the list above
-    type:
-      select
-    values:
-      - apache
-      - nginx
-    target:
-      BACK_END
   php_version:
     label:
       PHP version
@@ -20,16 +8,13 @@ user:
     type:
       select
     values:
-      - 7.4
-      - "8.0"
-      - 8.1
       - "8.2"
       - "8.3"
+      - "8.4"
     target:
       PHP_VERSION
   
   backend_ws:
-      disabled_post_install: true
       label:
         Laravel version
       hint:
@@ -37,14 +22,23 @@ user:
       type:
         select
       values:
-        - 7
-        - 8
-        - 9
         - "10"
         - "11"
         - "12"
       target:
         LARAVEL_VERSION
+  
+  additional_extensions:
+      label:
+        PHP Extensions
+      hint:
+        Select your php extensions
+      type:
+        multiple-select
+      values:
+        - "pdo_mysql"
+      target:
+        INSTALL_ADDITIONAL_EXTENSIONS
 
   php_error_reporting:
     label:
@@ -54,6 +48,7 @@ user:
     hint: Check the box to display PHP errors 
     target:
       DISPLAY_PHPERROR
+
   php_xdebug:
     label:
       Enable PHP extension XDEBUG?
