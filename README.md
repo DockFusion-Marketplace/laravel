@@ -4,8 +4,8 @@ This is a pre-configured Laravel environment designed to run seamlessly with Doc
 ## 🚀 What's Included
 The quickest way to get started with the Deck Laravel Development Container is using docker-compose.
 
-- Laravel — PHP web framework
-- PHP (8.2+) — Handles PHP processing
+- Laravel (9+) — PHP web framework
+- PHP (8.0+) — Handles PHP processing
 - Apache — Serves your Laravel app
 - Composer — Dependency management
 - Docker Compose — Multi-container orchestration
