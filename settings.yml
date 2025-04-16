@@ -15,6 +15,21 @@ user:
       - "8.4"
     target:
       PHP_VERSION
+      
+  node_version:
+    label:
+      Node version
+    hint:
+      Select a node version from the list above
+    type:
+      select
+    values:
+      - "--lts"
+      - "20"
+      - "22"
+      - "23"
+    target:
+      NODE_VERSION
   
   backend_ws:
       label:
@@ -40,6 +55,7 @@ user:
         multiple-select
       values:
         - "pdo_mysql"
+        - "exif"
       target:
         INSTALL_ADDITIONAL_EXTENSIONS
 

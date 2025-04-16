@@ -9,6 +9,7 @@ services:
         - 'DISPLAY_PHPERROR=${DISPLAY_PHPERROR}'
         - 'XDEBUG=${XDEBUG}'
         - 'INSTALL_ADDITIONAL_EXTENSIONS=${INSTALL_ADDITIONAL_EXTENSIONS}'
+        - 'NODE_VERSION=${NODE_VERSION}'
     volumes:
       - '${APP_CODE_PATH_HOST}:/var/www/html:cached'
     ports:
