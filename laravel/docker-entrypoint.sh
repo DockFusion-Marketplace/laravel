@@ -30,7 +30,7 @@ fi
 cp /etc/apache2/sites-available/000-default.conf.bk /etc/apache2/sites-available/000-default.conf
 mkdir -p /var/www/html/storage
 mkdir -p /var/www/html/bootstrap/cache
-chown -R www-data:www-data /var/www/html /var/www/html/storage /var/www/html/bootstrap/cache 2> /dev/null
+chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache 2> /dev/null
 chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache 2> /dev/null
 
 exec "$@"

@@ -80,7 +80,7 @@ RUN if echo ",${INSTALL_ADDITIONAL_EXTENSIONS}," | grep -q ",pdo_mysql,"; \
     fi
 
 # Clear apt-get cache
-RUN rm -rf /var/lib/apt/lists/*;
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # https://xdebug.org/docs/all_settings#idekey
 ENV DBGP_IDEKEY=VSC
