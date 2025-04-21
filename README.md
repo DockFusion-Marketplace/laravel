@@ -11,7 +11,6 @@ The quickest way to get started with the Deck Laravel Development Container is u
 - npm/yarn — Package managers for installing Node-based tooling like Vite and Laravel Mix
 - Apache — Serves your Laravel app
 - Composer — Dependency management
-- Docker Compose — Multi-container orchestration
 
 ## 📦 Requirements
 - [Docker](https://www.docker.com)
