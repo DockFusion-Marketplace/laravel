@@ -55,6 +55,10 @@ user:
         multiple-select
       values:
         - "pdo_mysql"
+        - "pdo_pgsql"
+        - "pdo_sqlite"
+        - "mongodb"
+        - "redis"
         - "exif"
       target:
         INSTALL_ADDITIONAL_EXTENSIONS
